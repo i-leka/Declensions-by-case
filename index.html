@@ -1,0 +1,46 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склонения по падежам</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="screen-reader-text">Сервис склонения по падежам</h1>
+    <div class="container">
+        <div class="form-container">
+            <p class="form-desc">Напишите слово в именительном падеже и выберите необходимый падеж.</p>
+            <form id="form-cases" method="get">
+                <label for="word">Введите слово</label>
+                <input type="text" name="word" id="word" placeholder="Работа" class="input-style" required>
+                <label for="case">Выберите падеж</label>
+                <select name="case" id="case" class="input-style">
+                    <option value="0">Родительный</option>
+                    <option value="1" selected>Дательный</option>
+                    <option value="2">Винительный</option>
+                    <option value="3">Творительный</option>
+                    <option value="4">Предложный</option>
+                </select>
+                <button type="submit" class="button">Преобразовать</button>
+            </form>
+        </div>
+        <div class="answ-contaner">
+            <h2 class="screen-reader-text">Преобразованное слово:</h2>
+            <div class="answ input-style">
+                <p class="original-case">Именительный падеж - <span class="original-word">Работа</span></p>
+                <p class="selected-case"> <span class="selected-case-word">Дательный</span> падеж - <span
+                        class="selected-word">Работе</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

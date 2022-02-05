@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: black;
+    background: linear-gradient(180deg, #D1EFFF 0%, #C4D8FF 0.01%, #95D2FF 100%);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Общий контейнер */
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    box-shadow: -5px -5px 70px rgba(0, 86, 166, 0.15);
+}
+
+.container>* {
+    width: 50%;
+    padding: 30px 50px;
+}
+
+.form-container p {
+    font-size: 16px;
+}
+
+/* Форма */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-desc {
+    margin: 0;
+}
+
+form label {
+    margin: 20px 0 5px;
+}
+
+form #word {
+    width: 100%;
+    font: inherit;
+}
+
+form #case {
+    width: 100%;
+    font: inherit;
+}
+
+.input-style {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(73, 73, 73, 0.562);
+    border-radius: 10px;
+}
+
+.button {
+    font: inherit;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: linear-gradient(122.33deg, #53E0FF 30.62%, #1E94E9 100%);
+    box-shadow: 5px 5px 20px rgba(0, 224, 255, 0.15);
+    border: none;
+    border-radius: 10px;
+}
+
+/* Результат */
+
+.answ-contaner {
+    display: flex;
+    background: #99EDFF url('images/Illustration.png') center no-repeat;
+    background-size: contain;
+    border-radius: 0 20px 20px 0;
+}
+
+.answ {
+    margin: auto;
+    max-width: 325px;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: 16px;
+    background: white;
+    border: none;
+}
